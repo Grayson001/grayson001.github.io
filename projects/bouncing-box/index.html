@@ -18,6 +18,8 @@
 			top: 100px;
 			left: 0px;
 			background-color: teal;
+			 background-image: url("https://i.pinimg.com/originals/c8/4c/7b/c84c7bc1aaaa7237b24483cc103e1494.gif");
+			 background-size:70px 70px;
 			font-size: 300%;
 			text-align: center;
 		}
@@ -56,11 +58,16 @@
 			speed = 10;
 			
 			function update() {
+				box.text(points);
     			position = position + (speed * direction);
     			if((position+ boxWidth) > boardWidth) {
-    			direction= -1;}
+    				points=points *3700000000000000000
+    				direction= -1;
+    			}
     			else if((position)< 0){
     			direction= 1;
+    			points=points-1;
+    			
 				}
     			box.css('left', position);
 			};
@@ -68,9 +75,9 @@
 			
 			function handleBoxClick() {
 				// TODO 4 / 5
-				speed = speed + 3;
-  position = 0;
-  points = points + 1;
+				speed = speed + 42000000000000000000000000000000000000000000000000000000;
+				direction= direction * -1;
+				points = points + 1;
 			};
 
 
